@@ -196,6 +196,7 @@ img {
   padding-right: 15px;
 }
 .hero-container {
+  margin: 0 auto;
   max-width: 1600px;
   background-color: #2f303a;
   background-image: url("../images/hero-logo/main-logo.jpg");
@@ -240,6 +241,22 @@ img {
 .privelegius {
   margin: 0;
   padding: 94px 0;
+}
+.privelegius-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.privelegius-group-icon {
+  width: 70px;
+  height: 70px;
 }
 .privelegius-title {
   margin-bottom: 10px;
