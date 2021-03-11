@@ -118,20 +118,24 @@ img {
   display: flex;
   align-items: center;
 
-  margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 .header-contact-list-item {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .envelope {
   display: flex;
   align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
-.smartfone {
-  display: flex;
-  align-items: center;
+.envelope:focus,
+.envelope:hover {
+  fill: var(--accent-color);
 }
 
 .mail-link {
@@ -150,9 +154,22 @@ img {
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.smartfone {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 12px;
+  margin-right: 10px;
+}
+.smartfone:hover,
+.smartfone:focus {
+  fill: var(--accent-color);
 }
 .tel-link {
-  display: block;
+  align-items: center;
+  display: flex;
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -164,6 +181,7 @@ img {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* ============================КОНЕЦ ШАПКИ========================== */
 
@@ -176,6 +194,13 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.hero-container {
+  max-width: 1600px;
+  background-color: #2f303a;
+  background-image: url("../images/hero-logo/main-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero {
   background-color: #2f303a;
