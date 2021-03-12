@@ -320,6 +320,41 @@ img {
   display: block;
   max-width: 100%;
 }
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  background: #ffffff;
+  margin-top: 16px;
+}
+.scial-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-list-icon:focus,
+.social-list-icon:hover {
+  fill: #ffffff;
+}
 .members {
   margin: 0;
 
