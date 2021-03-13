@@ -329,13 +329,8 @@ img {
   background: #ffffff;
   margin-top: 16px;
 }
-.scial-list-item {
-  display: flex;
-  align-items: center;
-  fill: #ffffff;
-}
 
-.social-list-link {
+.social-block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,19 +338,24 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover .social-block {
   background-color: var(--accent-color);
+}
+.social-list-link:focus .social-block {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon {
+  fill: #ffffff;
+}
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
 }
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
-.social-list-icon:focus,
-.social-list-icon:hover {
-  fill: #ffffff;
-}
+
 .members {
   margin: 0;
 
@@ -481,6 +481,7 @@ img {
 
 /* ===============================ФУТЕР========================== */
 .footer {
+  display: flex;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -488,7 +489,7 @@ img {
 
 .footer-logo {
   display: block;
-  margin-top: 60px;
+
   margin-bottom: 20px;
   font-family: var(--secondary-font);
 
@@ -500,12 +501,10 @@ img {
 
   color: #ffffff;
 }
-.footer-list-item {
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.contacts {
-  margin-top: 20px;
-}
+
 .footer-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -519,6 +518,51 @@ img {
 .footer-list-link:focus {
   color: #ffffff;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-join {
+  font-family: var(--main-font);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-social-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer-social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.footer-social-list-link:hover .footer-social-block {
+  background-color: var(--accent-color);
+}
+
 /* ======================КОНЕЦ ФУТЕРА===================== */
 
 /* =========================ГЛАВНАЯ ПОРТФОЛИО================== */
